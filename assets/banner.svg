@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1b33"/>
+      <stop offset="60%" stop-color="#12306b"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <radialGradient id="light" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5aa9ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#5aa9ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0b1b33"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="300" rx="20"/></clipPath>
+    <style>
+      .title { font: 700 58px -apple-system, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif; fill: #ffffff; letter-spacing: -1.4px; }
+      .role { font: 500 23px -apple-system, 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif; fill: #dbe7ff; letter-spacing: 0.1px; }
+      .focus { font: 600 13px -apple-system, 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif; fill: #9db8e8; letter-spacing: 2.6px; }
+      .clock { font: 300 30px -apple-system, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif; fill: #ffffff; fill-opacity: 0.92; }
+      .rule { fill: #ffffff; fill-opacity: 0.25; }
+      .ring { fill: none; stroke: #ffffff; stroke-opacity: 0.09; stroke-width: 1.5; }
+      .shade { fill: #000000; fill-opacity: 0.28; }
+      .fade { opacity: 0; animation: fadeIn .9s ease-out forwards; }
+      .d1 { animation-delay: .1s } .d2 { animation-delay: .35s } .d3 { animation-delay: .6s }
+      @keyframes fadeIn { to { opacity: 1 } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="300" fill="url(#base)"/>
+    <circle cx="1040" cy="60" r="300" fill="url(#light)"/>
+    <circle class="ring" cx="1010" cy="170" r="90"/>
+    <circle class="ring" cx="1010" cy="170" r="150"/>
+    <circle class="ring" cx="1010" cy="170" r="210"/>
+    <circle class="ring" cx="1010" cy="170" r="270"/>
+    <rect class="shade" width="1200" height="300"/>
+
+    <g transform="translate(700 96)">
+      <g class="fade d3">
+        <!-- lid -->
+        <rect x="0" y="0" width="252" height="162" rx="12" fill="#0a1224" stroke="#ffffff" stroke-opacity="0.4" stroke-width="2.5"/>
+        <rect x="8" y="8" width="236" height="146" rx="6" fill="url(#screen)"/>
+        <circle cx="126" cy="13" r="1.8" fill="#000000"/>
+        <!-- menu bar -->
+        <rect x="8" y="8" width="236" height="12" rx="6" fill="#ffffff" fill-opacity="0.1"/>
+        <circle cx="19" cy="14" r="2.4" fill="#ffffff" fill-opacity="0.6"/>
+        <rect x="28" y="12.5" width="22" height="3" rx="1.5" fill="#ffffff" fill-opacity="0.45"/>
+        <rect x="56" y="12.5" width="16" height="3" rx="1.5" fill="#ffffff" fill-opacity="0.3"/>
+        <rect x="78" y="12.5" width="16" height="3" rx="1.5" fill="#ffffff" fill-opacity="0.3"/>
+        <!-- window -->
+        <rect x="30" y="34" width="192" height="98" rx="8" fill="#0a1224" fill-opacity="0.75" stroke="#ffffff" stroke-opacity="0.2"/>
+        <circle cx="42" cy="45" r="2.6" fill="#ffffff" fill-opacity="0.5"/>
+        <circle cx="51" cy="45" r="2.6" fill="#ffffff" fill-opacity="0.35"/>
+        <circle cx="60" cy="45" r="2.6" fill="#ffffff" fill-opacity="0.2"/>
+        <rect x="30" y="54" width="52" height="78" fill="#ffffff" fill-opacity="0.06"/>
+        <rect x="40" y="64" width="32" height="4" rx="2" fill="#5aa9ff" fill-opacity="0.85"/>
+        <rect x="40" y="76" width="26" height="4" rx="2" fill="#ffffff" fill-opacity="0.3"/>
+        <rect x="40" y="88" width="30" height="4" rx="2" fill="#ffffff" fill-opacity="0.3"/>
+        <rect x="94" y="64" width="46" height="4" rx="2" fill="#5aa9ff" fill-opacity="0.85"/>
+        <rect x="94" y="76" width="92" height="4" rx="2" fill="#ffffff" fill-opacity="0.3"/>
+        <rect x="104" y="88" width="76" height="4" rx="2" fill="#ffffff" fill-opacity="0.3"/>
+        <rect x="104" y="100" width="58" height="4" rx="2" fill="#ffffff" fill-opacity="0.3"/>
+        <rect x="94" y="112" width="34" height="4" rx="2" fill="#5aa9ff" fill-opacity="0.55"/>
+        <!-- base -->
+        <path d="M -14 162 H 266 V 166 Q 266 172 258 172 H -6 Q -14 172 -14 166 Z" fill="#0a1224" stroke="#ffffff" stroke-opacity="0.4" stroke-width="2"/>
+        <rect x="100" y="162" width="52" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.18"/>
+      </g>
+    </g>
+
+    <g transform="translate(1010 32)">
+      <g class="fade d3">
+        <!-- side buttons -->
+        <rect x="-3" y="58" width="3" height="22" rx="1.5" fill="#ffffff" fill-opacity="0.35"/>
+        <rect x="-3" y="92" width="3" height="40" rx="1.5" fill="#ffffff" fill-opacity="0.35"/>
+        <rect x="118" y="84" width="3" height="56" rx="1.5" fill="#ffffff" fill-opacity="0.35"/>
+        <!-- body -->
+        <rect x="0" y="0" width="118" height="236" rx="34" fill="#0a1224" stroke="#ffffff" stroke-opacity="0.4" stroke-width="2.5"/>
+        <!-- screen -->
+        <rect x="6" y="6" width="106" height="224" rx="28" fill="url(#screen)"/>
+        <rect x="38" y="16" width="42" height="12" rx="6" fill="#000000"/>
+        <text x="59" y="72" text-anchor="middle" class="clock">9:41</text>
+        <rect x="19" y="94" width="38" height="38" rx="10" fill="#ffffff" fill-opacity="0.16"/>
+        <rect x="61" y="94" width="38" height="38" rx="10" fill="#5aa9ff" fill-opacity="0.85"/>
+        <rect x="19" y="140" width="38" height="38" rx="10" fill="#5aa9ff" fill-opacity="0.55"/>
+        <rect x="61" y="140" width="38" height="38" rx="10" fill="#ffffff" fill-opacity="0.16"/>
+        <rect x="40" y="216" width="38" height="4" rx="2" fill="#ffffff" fill-opacity="0.5"/>
+      </g>
+    </g>
+
+    <text x="80" y="128" class="title fade d1">Burak Aydın</text>
+    <text x="82" y="170" class="role fade d2">iOS Developer · Software Engineer</text>
+    <g class="fade d3">
+      <rect class="rule" x="82" y="204" width="56" height="2"/>
+      <text x="82" y="238" class="focus">SWIFTUI&#160;&#160;·&#160;&#160;CONCURRENCY&#160;&#160;·&#160;&#160;AI</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="230" viewBox="0 0 860 230">
+  <defs>
+    <clipPath id="bar"><rect x="36" y="72" width="788" height="12" rx="6"/></clipPath>
+    <style>
+      .card { fill: #1c1c1e; }
+      .track { fill: #2c2c2e; }
+      .title { font: 700 22px -apple-system, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif; fill: #f5f5f7; letter-spacing: -0.4px; }
+      .note { font: 500 13px -apple-system, 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif; fill: #a1a1a6; }
+      .lang { font: 500 16px -apple-system, 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif; fill: #f5f5f7; }
+      .pct  { font: 500 15px -apple-system, 'SF Pro Text', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif; fill: #a1a1a6; font-variant-numeric: tabular-nums; }
+      .seg  { transform-box: fill-box; transform-origin: left; animation: grow .7s ease-out both; }
+      .fade { animation: fade .5s ease-out both; }
+      @keyframes grow { from { transform: scaleX(0) } to { transform: scaleX(1) } }
+      @keyframes fade { from { opacity: 0 } to { opacity: 1 } }
+    </style>
+  </defs>
+  <rect class="card" width="860" height="230" rx="22"/>
+  <text x="36" y="46" class="title">Most used languages</text>
+  <rect class="track" x="36" y="72" width="788" height="12" rx="6"/>
+  <g clip-path="url(#bar)"><rect x="36.00" y="72" width="644.16" height="12" fill="#ff6a3d" class="seg" style="animation-delay:0.00s"/><rect x="682.16" y="72" width="78.72" height="12" fill="#ffd60a" class="seg" style="animation-delay:0.12s"/><rect x="762.88" y="72" width="37.78" height="12" fill="#c58b4a" class="seg" style="animation-delay:0.24s"/><rect x="802.66" y="72" width="11.04" height="12" fill="#5e9bd6" class="seg" style="animation-delay:0.36s"/><rect x="815.70" y="72" width="6.30" height="12" fill="#ff4f8b" class="seg" style="animation-delay:0.48s"/></g>
+  <g class="fade" style="animation-delay:0.40s"><circle cx="41" cy="117" r="5" fill="#ff6a3d"/><text x="56" y="122" class="lang">Swift</text><text x="406" y="122" class="pct" text-anchor="end">82.0%</text></g><g class="fade" style="animation-delay:0.48s"><circle cx="435" cy="117" r="5" fill="#ffd60a"/><text x="450" y="122" class="lang">JavaScript</text><text x="800" y="122" class="pct" text-anchor="end">10.2%</text></g><g class="fade" style="animation-delay:0.56s"><circle cx="41" cy="151" r="5" fill="#c58b4a"/><text x="56" y="156" class="lang">Java</text><text x="406" y="156" class="pct" text-anchor="end">5.0%</text></g><g class="fade" style="animation-delay:0.64s"><circle cx="435" cy="151" r="5" fill="#5e9bd6"/><text x="450" y="156" class="lang">Python</text><text x="800" y="156" class="pct" text-anchor="end">1.7%</text></g><g class="fade" style="animation-delay:0.72s"><circle cx="41" cy="185" r="5" fill="#ff4f8b"/><text x="56" y="190" class="lang">C++</text><text x="406" y="190" class="pct" text-anchor="end">1.1%</text></g>
+</svg>
